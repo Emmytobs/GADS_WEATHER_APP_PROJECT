@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Created by Emmytobs</a>
+            <h1>Get Your Weather!</h1>
+            <div>
+                *github_link*
+            </div>
+        </nav>
+        <div id="landing">
+            <div class="container">
+                <div class="inputContainer">
+                    <label for="location">Enter your location</label>
+                    <div>
+                        <input id="location" type="text" placeholder="Ex: Los Angeles">
+                        <button id="get_weather" class="btn primary-btn">Get Weather</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="weather_result">
+            <div class="container">
+                <div class="headline">
+                    <div class="headline-text">
+                        <h1><span id="temperature">24 *C</span> &middot; <span id="temp_text">Sunny</span></h1>
+                    </div>
+                    <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" class="icon" id="weather_icon">
+                </div>
+                <div>
+                    <p class="description"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2020. Created by Emmytobs
+    </footer>
+    
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
