@@ -15,37 +15,43 @@
                 *github_link*
             </div>
         </nav>
-        <div id="landing">
-            <div class="container">
-                <div class="inputContainer">
-                    <label for="location">Enter your location</label>
-                    <div>
-                        <input id="location" type="text" placeholder="Ex: Los Angeles">
-                        <button id="get_weather" class="btn primary-btn">Get Weather</button>
-                    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="inputContainer">
+                <label for="location">Enter your location</label>
+                <div>
+                    <input id="location" type="text" placeholder="Ex: Los Angeles">
+                    <button type="submit" id="get_weather" class="btn primary-btn">Get Weather</button>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
         <section id="weather_result">
             <div class="container">
                 <div class="headline">
                     <div class="headline-text">
-                        <h1><span id="temperature">24 *C</span> &middot; <span id="temp_text">Sunny</span></h1>
+                        <h1>
+                            <span id="location"></span> 
+                        </h1>
+                        <h1>
+                            <!-- <span id="location"></span> -->
+                            <span id="temp_text">Sunny</span> &middot;
+                            <span id="temperature">24 *C</span>
+                        </h1>
+                        <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" class="icon" id="weather_icon">
                     </div>
-                    <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" class="icon" id="weather_icon">
+                    <h1 id="address_error">Address could not be found</h1>
                 </div>
-                <div>
+                <!-- <div>
                     <p class="description"></p>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
     <footer>
         &copy; 2020. Created by Emmytobs
     </footer>
-    
+
     <script src="./assets/scripts/index.js"></script>
 </body>
 </html>
