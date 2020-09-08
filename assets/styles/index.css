@@ -4,102 +4,51 @@
 
 html, body {
     width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    color: #f5ebeb;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
 header {
-    width: 100%;
-    height: 100vh;
-    background: url("../imgs/pexels-aline-nadai-1887792.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* animation: change-background-image 12s infinite; */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
 }
-
-/* @keyframes change-background-image {
-    0% {
-        background: url("../imgs/pexels-aline-nadai-1887792.jpg") no-repeat;
-    }
-    50% {
-        background: "black"
-    }
-} */
 
 header nav {
-    width: inherit;
-    padding: 12px 0px;
-    background: rgba(0,0,0,0);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#landing {
-    height: 70vh;
-}
-
-.container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inputContainer {
-    width: 80%;
-    background: rgba(0,0,0,0.5);
-    padding: 40px 25px;
-}
-
-.inputContainer label {
-    line-height: 30px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.inputContainer div  {
     width: 100%;
-    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    margin: 50px 0px 0px 0px;
 }
 
-.inputContainer div input[type="text"] {
-    padding: 18px 12px;
-    background: #e4dddd;
-    color: #000;
-    flex: 3;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-weight: bolder;
+
+
+#weather_result {
+    display: none;
+}
+
+#weather_result #address_error {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 25px;
     text-align: center;
 }
-
-.inputContainer div input[type="text"]::placeholder {
-    font-size: 16px;
-    font-weight: bolder;
-}
-
-.inputContainer div > * {
-    margin: 0;
-    padding: 0;
-}
-
-.inputContainer div button {
-    border: none;
-    outline: none;
-    font-size: 13px;
-    background: none;
-    color: #fff;
-    font-weight: bolder;
-    cursor: pointer;
-    flex: 1;
-    height: 42px;
-}
-
