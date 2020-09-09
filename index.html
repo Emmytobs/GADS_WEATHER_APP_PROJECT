@@ -9,11 +9,7 @@
 <body>
     <header>
         <nav>
-            <a href="">Created by Emmytobs</a>
             <h1>Get Your Weather!</h1>
-            <div>
-                *github_link*
-            </div>
         </nav>
     </header>
     <main>
@@ -35,13 +31,14 @@
                         </h1>
                         <h1>
                             <!-- <span id="location"></span> -->
-                            <span id="temp_text">Sunny</span> &middot;
-                            <span id="temperature">24 *C</span>
+                            <span id="temp_text"></span> &middot;
+                            <span id="temperature"></span>
                         </h1>
                         <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" class="icon" id="weather_icon">
                     </div>
                     <h1 id="address_error">Address could not be found</h1>
                 </div>
+                <div class="loader"></div>
                 <!-- <div>
                     <p class="description"></p>
                 </div> -->
@@ -49,7 +46,7 @@
         </section>
     </main>
     <footer>
-        &copy; 2020. Created by Emmytobs
+        &copy; <script>document.write(new Date().getFullYear())</script>. Created by <a href="https://github.com/emmytobs">Emmytobs</a>
     </footer>
 
     <script src="./assets/scripts/index.js"></script>
